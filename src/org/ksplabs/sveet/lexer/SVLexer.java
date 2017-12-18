@@ -15,24 +15,24 @@ import org.ksplabs.sveet.jcclexer.Token;
  *
  * @author kpankov
  */
-public class VerilogLexer implements Lexer<VerilogTokenId> {
+public class SVLexer implements Lexer<SVTokenId> {
 
-    private LexerRestartInfo<VerilogTokenId> info;
+    private LexerRestartInfo<SVTokenId> info;
     private JavaParserTokenManager javaParserTokenManager;
 
-    VerilogLexer(LexerRestartInfo<VerilogTokenId> info) {
+    SVLexer(LexerRestartInfo<SVTokenId> info) {
         this.info = info;
         JavaCharStream stream = new JavaCharStream(info.input());
         javaParserTokenManager = new JavaParserTokenManager(stream);
     }
 
     @Override
-    public org.netbeans.api.lexer.Token<VerilogTokenId> nextToken() {
+    public org.netbeans.api.lexer.Token<SVTokenId> nextToken() {
         Token token = javaParserTokenManager.getNextToken();
         if (info.input().readLength() < 1) {
             return null;
         }
-        return info.tokenFactory().createToken(VerilogLanguageHierarchy.getToken(token.kind));
+        return info.tokenFactory().createToken(SVLanguageHierarchy.getToken(token.kind));
     }
 
     @Override

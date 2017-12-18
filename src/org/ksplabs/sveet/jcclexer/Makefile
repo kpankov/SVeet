@@ -1,6 +1,6 @@
 
 all:
-	~/Downloads/javacc-5.0/bin/javacc Java1.5.jj
+	~/Downloads/javacc-5.0/bin/javacc SV.jj
 	
 clean:
 	rm -f ./*.java

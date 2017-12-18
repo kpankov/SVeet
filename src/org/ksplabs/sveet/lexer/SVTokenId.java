@@ -13,13 +13,13 @@ import org.netbeans.api.lexer.Language;
  *
  * @author kpankov
  */
-public class VerilogTokenId implements TokenId {
+public class SVTokenId implements TokenId {
 
     private final String name;
     private final String primaryCategory;
     private final int id;
 
-    VerilogTokenId(
+    SVTokenId(
             String name,
             String primaryCategory,
             int id) {
@@ -43,7 +43,7 @@ public class VerilogTokenId implements TokenId {
         return name;
     }
 
-    public static Language<VerilogTokenId> getLanguage() {
-        return new VerilogLanguageHierarchy().language();
+    public static Language<SVTokenId> getLanguage() {
+        return new SVLanguageHierarchy().language();
     }
 }
