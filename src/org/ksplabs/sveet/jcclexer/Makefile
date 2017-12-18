@@ -1,6 +1,15 @@
+JAVACC_DIR=/home/kpankov/NetBeansProjects/javacc-5.0/bin
 
-all:
-	~/Downloads/javacc-5.0/bin/javacc SV.jj
-	
+JAVACC=$(JAVACC_DIR)/javacc
+JJDOC=$(JAVACC_DIR)/jjdoc
+JJRUN=$(JAVACC_DIR)/jjrun
+JJTREE=$(JAVACC_DIR)/jjtree
+
+gen:
+	$(JAVACC) SV.jj
+
+doc:
+	$(JJDOC) SV.jj
+
 clean:
-	rm -f ./*.java
+	rm -f ./*.java ./*.html
