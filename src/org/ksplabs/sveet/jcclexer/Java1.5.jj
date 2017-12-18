@@ -108,13 +108,13 @@ TOKEN :
 | < DOUBLE: "double" >
 | < ELSE: "else" >
 | < ENUM: "enum" >
-| < EXTENDS: "extends" >
+| < ENDMODULE: "endmodule" >
 | < FALSE: "false" >
 | < FINAL: "final" >
 | < FINALLY: "finally" >
 | < FLOAT: "float" >
 | < FOR: "for" >
-| < GOTO: "goto" >
+| < MODULE: "module" >
 | < IF: "if" >
 | < IMPLEMENTS: "implements" >
 | < IMPORT: "import" >

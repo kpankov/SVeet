@@ -51,7 +51,7 @@ public interface JavaParserConstants {
   /** RegularExpression Id. */
   int ENUM = 23;
   /** RegularExpression Id. */
-  int EXTENDS = 24;
+  int ENDMODULE = 24;
   /** RegularExpression Id. */
   int FALSE = 25;
   /** RegularExpression Id. */
@@ -63,7 +63,7 @@ public interface JavaParserConstants {
   /** RegularExpression Id. */
   int FOR = 29;
   /** RegularExpression Id. */
-  int GOTO = 30;
+  int MODULE = 30;
   /** RegularExpression Id. */
   int IF = 31;
   /** RegularExpression Id. */
@@ -268,7 +268,7 @@ public interface JavaParserConstants {
     "\"case\"",
     "\"catch\"",
     "\"char\"",
-    "\"module\"",
+    "\"class\"",
     "\"const\"",
     "\"continue\"",
     "\"default\"",
@@ -276,13 +276,13 @@ public interface JavaParserConstants {
     "\"double\"",
     "\"else\"",
     "\"enum\"",
-    "\"extends\"",
+    "\"endmodule\"",
     "\"false\"",
     "\"final\"",
     "\"finally\"",
     "\"float\"",
     "\"for\"",
-    "\"goto\"",
+    "\"module\"",
     "\"if\"",
     "\"implements\"",
     "\"import\"",
