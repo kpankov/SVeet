@@ -38,7 +38,7 @@ public class SVLanguageHierarchy extends LanguageHierarchy<SVTokenId> {
             new SVTokenId("ASSUME", "keyword", 16),
             new SVTokenId("AUTOMATIC", "keyword", 17),
             new SVTokenId("BEFORE", "keyword", 18),
-            new SVTokenId("BEGIN", "keyword", 19),
+            new SVTokenId("BEGIN", "block", 19),
             new SVTokenId("BIND", "keyword", 20),
             new SVTokenId("BINS", "keyword", 21),
             new SVTokenId("BINSOF", "keyword", 22),
@@ -74,7 +74,7 @@ public class SVLanguageHierarchy extends LanguageHierarchy<SVTokenId> {
             new SVTokenId("DO", "keyword", 52),
             new SVTokenId("EDGE", "keyword", 53),
             new SVTokenId("ELSE", "keyword", 54),
-            new SVTokenId("END", "keyword", 55),
+            new SVTokenId("END", "block", 55),
             new SVTokenId("ENDCASE", "keyword", 56),
             new SVTokenId("ENDCLASS", "keyword", 57),
             new SVTokenId("ENDCLOCKING", "keyword", 58),
@@ -248,21 +248,21 @@ public class SVLanguageHierarchy extends LanguageHierarchy<SVTokenId> {
             new SVTokenId("WOR", "keyword", 226),
             new SVTokenId("XNOR", "keyword", 227),
             new SVTokenId("XOR", "keyword", 228),
-            new SVTokenId("INTEGER_LITERAL", "keyword", 229),
-            new SVTokenId("DECIMAL_LITERAL", "keyword", 230),
+            new SVTokenId("INTEGER_LITERAL", "number", 229),
+            new SVTokenId("DECIMAL_LITERAL", "number", 230),
             new SVTokenId("HEX_LITERAL", "number", 231),
-            new SVTokenId("OCTAL_LITERAL", "keyword", 232),
-            new SVTokenId("BINARY_LITERAL", "keyword", 233),
-            new SVTokenId("FLOATING_POINT_LITERAL", "keyword", 234),
-            new SVTokenId("DECIMAL_FLOATING_POINT_LITERAL", "keyword", 235),
-            new SVTokenId("DECIMAL_EXPONENT", "keyword", 236),
-            new SVTokenId("HEXADECIMAL_FLOATING_POINT_LITERAL", "keyword", 237),
-            new SVTokenId("HEXADECIMAL_EXPONENT", "keyword", 238),
-            new SVTokenId("CHARACTER_LITERAL", "keyword", 239),
-            new SVTokenId("STRING_LITERAL", "keyword", 240),
+            new SVTokenId("OCTAL_LITERAL", "number", 232),
+            new SVTokenId("BINARY_LITERAL", "number", 233),
+            new SVTokenId("FLOATING_POINT_LITERAL", "number", 234),
+            new SVTokenId("DECIMAL_FLOATING_POINT_LITERAL", "number", 235),
+            new SVTokenId("DECIMAL_EXPONENT", "number", 236),
+            new SVTokenId("HEXADECIMAL_FLOATING_POINT_LITERAL", "number", 237),
+            new SVTokenId("HEXADECIMAL_EXPONENT", "number", 238),
+            new SVTokenId("CHARACTER_LITERAL", "string", 239),
+            new SVTokenId("STRING_LITERAL", "string", 240),
             new SVTokenId("IDENTIFIER", "identifier", 241),
-            new SVTokenId("LETTER", "keyword", 242),
-            new SVTokenId("PART_LETTER", "keyword", 243),
+            new SVTokenId("LETTER", "string", 242),
+            new SVTokenId("PART_LETTER", "string", 243),
             new SVTokenId("LPAREN", "separator", 244),
             new SVTokenId("RPAREN", "separator", 245),
             new SVTokenId("LBRACE", "separator", 246),
@@ -338,7 +338,7 @@ public class SVLanguageHierarchy extends LanguageHierarchy<SVTokenId> {
 
     @Override
     protected String mimeType() {
-        return "text/x-verilog";
+        return "text/x-systemverilog";
     }
 
 }

@@ -1,4 +1,4 @@
-JAVACC_DIR=/home/kpankov/NetBeansProjects/javacc-5.0/bin
+JAVACC_DIR=/Users/kpankov/NetBeansProjects/javacc-5.0/bin
 
 JAVACC=$(JAVACC_DIR)/javacc
 JJDOC=$(JAVACC_DIR)/jjdoc

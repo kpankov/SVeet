@@ -303,13 +303,13 @@ TOKEN :
       | <BINARY_LITERAL> (["l","L"])?
   >
 |
-  < #DECIMAL_LITERAL: ["1"-"9"] (["0"-"9"])* >
+  < #DECIMAL_LITERAL: ["0"-"9"] (["0"-"9"])* >
 |
-  < #HEX_LITERAL: "'h" (["0"-"9","a"-"f","A"-"F"])+ >
+  < #HEX_LITERAL: "'" ["h", "H"] (["0"-"9","a"-"f","A"-"F"])+ >
 |
-  < #OCTAL_LITERAL: "0" (["0"-"7"])* >
+  < #OCTAL_LITERAL: "'" ["o", "O"] (["0"-"7"])* >
 |
-  < #BINARY_LITERAL: "'b" (["0"-"1"])* >
+  < #BINARY_LITERAL: "'" ["b", "B"] (["0"-"1"])* >
 |
   < FLOATING_POINT_LITERAL:
         <DECIMAL_FLOATING_POINT_LITERAL>

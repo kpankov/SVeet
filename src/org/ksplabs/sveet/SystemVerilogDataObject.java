@@ -26,71 +26,71 @@ import org.openide.windows.TopComponent;
 })
 @MIMEResolver.ExtensionRegistration(
         displayName = "#LBL_SystemVerilog_LOADER",
-        mimeType = "text/x-system-verilog",
+        mimeType = "text/x-systemverilog",
         extension = {"sv"}
 )
 @DataObject.Registration(
-        mimeType = "text/x-system-verilog",
+        mimeType = "text/x-systemverilog",
         iconBase = "org/ksplabs/sveet/SystemVerilog.png",
         displayName = "#LBL_SystemVerilog_LOADER",
         position = 300
 )
 @ActionReferences({
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.OpenAction"),
             position = 100,
             separatorAfter = 200
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.CutAction"),
             position = 300
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.CopyAction"),
             position = 400,
             separatorAfter = 500
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.DeleteAction"),
             position = 600
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.RenameAction"),
             position = 700,
             separatorAfter = 800
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.SaveAsTemplateAction"),
             position = 900,
             separatorAfter = 1000
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.FileSystemAction"),
             position = 1100,
             separatorAfter = 1200
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.ToolsAction"),
             position = 1300
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.PropertiesAction"),
             position = 1400
     )
@@ -99,7 +99,7 @@ public class SystemVerilogDataObject extends MultiDataObject {
 
     public SystemVerilogDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
         super(pf, loader);
-        registerEditor("text/x-system-verilog", true);
+        registerEditor("text/x-systemverilog", true);
     }
 
     @Override
@@ -110,7 +110,7 @@ public class SystemVerilogDataObject extends MultiDataObject {
     @MultiViewElement.Registration(
             displayName = "#LBL_SystemVerilog_EDITOR",
             iconBase = "org/ksplabs/sveet/SystemVerilog.png",
-            mimeType = "text/x-system-verilog",
+            mimeType = "text/x-systemverilog",
             persistenceType = TopComponent.PERSISTENCE_ONLY_OPENED,
             preferredID = "SystemVerilog",
             position = 1000

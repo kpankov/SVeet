@@ -16,6 +16,30 @@
                     </folder>
                 </folder>
             </folder>
+            <folder name="x-systemverilog">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.ksplabs.sveet.Bundle"/>
+                <folder name="FontsColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="FontAndColors.xml" url="FontAndColors.xml">
+                                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.ksplabs.sveet.Bundle"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+            <folder name="x-systemverilog">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.ksplabs.sveet.Bundle"/>
+                <folder name="FontsColors">
+                    <folder name="NetBeans">
+                        <folder name="Defaults">
+                            <file name="FontAndColors.xml" url="FontAndColors.xml">
+                                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.ksplabs.sveet.Bundle"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
         </folder>
     </folder>
 
@@ -23,6 +47,8 @@
         <folder name="PreviewExamples">
             <folder name="text">
                 <file name="x-verilog" url="VerilogTemplate.v"/>
+                <file name="x-systemverilog" url="SystemVerilogTemplate.sv"/>
+                <file name="x-systemverilog-header" url="SystemVerilogHeaderTemplate.svh"/>
             </folder>
         </folder>
     </folder>

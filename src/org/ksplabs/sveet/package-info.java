@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-@TemplateRegistration(folder = "SVeet", content = "VerilogTemplate.v")
+//@TemplateRegistration(folder = "SVeet", content = "VerilogTemplate.v")
         
-//@TemplateRegistration(folder = "Other", content = "SystemVerilogTemplate.sv")
+@TemplateRegistration(folder = "SVeet", content = "SystemVerilogTemplate.sv")
         
 //@TemplateRegistration(folder = "Other", content = "SystemVerilogHeaderTemplate.svh")
         

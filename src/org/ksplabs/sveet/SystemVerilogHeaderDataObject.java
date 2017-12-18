@@ -26,71 +26,71 @@ import org.openide.windows.TopComponent;
 })
 @MIMEResolver.ExtensionRegistration(
         displayName = "#LBL_SystemVerilogHeader_LOADER",
-        mimeType = "text/x-system-verilog-header",
+        mimeType = "text/x-systemverilog",
         extension = {"svh"}
 )
 @DataObject.Registration(
-        mimeType = "text/x-system-verilog-header",
+        mimeType = "text/x-systemverilog",
         iconBase = "org/ksplabs/sveet/SystemVerilogHeader.png",
         displayName = "#LBL_SystemVerilogHeader_LOADER",
         position = 300
 )
 @ActionReferences({
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.OpenAction"),
             position = 100,
             separatorAfter = 200
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.CutAction"),
             position = 300
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.CopyAction"),
             position = 400,
             separatorAfter = 500
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "Edit", id = "org.openide.actions.DeleteAction"),
             position = 600
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.RenameAction"),
             position = 700,
             separatorAfter = 800
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.SaveAsTemplateAction"),
             position = 900,
             separatorAfter = 1000
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.FileSystemAction"),
             position = 1100,
             separatorAfter = 1200
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.ToolsAction"),
             position = 1300
     )
     ,
     @ActionReference(
-            path = "Loaders/text/x-system-verilog-header/Actions",
+            path = "Loaders/text/x-systemverilog/Actions",
             id = @ActionID(category = "System", id = "org.openide.actions.PropertiesAction"),
             position = 1400
     )
@@ -99,7 +99,7 @@ public class SystemVerilogHeaderDataObject extends MultiDataObject {
 
     public SystemVerilogHeaderDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
         super(pf, loader);
-        registerEditor("text/x-system-verilog-header", true);
+        registerEditor("text/x-systemverilog", true);
     }
 
     @Override
@@ -110,7 +110,7 @@ public class SystemVerilogHeaderDataObject extends MultiDataObject {
     @MultiViewElement.Registration(
             displayName = "#LBL_SystemVerilogHeader_EDITOR",
             iconBase = "org/ksplabs/sveet/SystemVerilogHeader.png",
-            mimeType = "text/x-system-verilog-header",
+            mimeType = "text/x-systemverilog",
             persistenceType = TopComponent.PERSISTENCE_ONLY_OPENED,
             preferredID = "SystemVerilogHeader",
             position = 1000
