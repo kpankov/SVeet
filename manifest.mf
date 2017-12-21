@@ -4,5 +4,5 @@ OpenIDE-Module: org.ksplabs.sveet
 OpenIDE-Module-Layer: org/ksplabs/sveet/layer.xml
 OpenIDE-Module-Localizing-Bundle: org/ksplabs/sveet/Bundle.properties
 OpenIDE-Module-Requires: cnb.org.netbeans.modules.lexer.nbbridge
-OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Specification-Version: 0.1
 

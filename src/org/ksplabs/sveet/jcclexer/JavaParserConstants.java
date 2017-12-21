@@ -485,103 +485,105 @@ public interface JavaParserConstants {
   /** RegularExpression Id. */
   int STRING_LITERAL = 240;
   /** RegularExpression Id. */
-  int IDENTIFIER = 241;
+  int DELAY = 241;
   /** RegularExpression Id. */
-  int LETTER = 242;
+  int IDENTIFIER = 242;
   /** RegularExpression Id. */
-  int PART_LETTER = 243;
+  int LETTER = 243;
   /** RegularExpression Id. */
-  int LPAREN = 244;
+  int PART_LETTER = 244;
   /** RegularExpression Id. */
-  int RPAREN = 245;
+  int LPAREN = 245;
   /** RegularExpression Id. */
-  int LBRACE = 246;
+  int RPAREN = 246;
   /** RegularExpression Id. */
-  int RBRACE = 247;
+  int LBRACE = 247;
   /** RegularExpression Id. */
-  int LBRACKET = 248;
+  int RBRACE = 248;
   /** RegularExpression Id. */
-  int RBRACKET = 249;
+  int LBRACKET = 249;
   /** RegularExpression Id. */
-  int SEMICOLON = 250;
+  int RBRACKET = 250;
   /** RegularExpression Id. */
-  int COMMA = 251;
+  int SEMICOLON = 251;
   /** RegularExpression Id. */
-  int DOT = 252;
+  int COMMA = 252;
   /** RegularExpression Id. */
-  int AT = 253;
+  int DOT = 253;
   /** RegularExpression Id. */
-  int BLOCKINGASSIGN = 254;
+  int AT = 254;
   /** RegularExpression Id. */
-  int NONBLOCKINGASSIGN = 255;
+  int BLOCKINGASSIGN = 255;
   /** RegularExpression Id. */
-  int LT = 256;
+  int NONBLOCKINGASSIGN = 256;
   /** RegularExpression Id. */
-  int BANG = 257;
+  int LT = 257;
   /** RegularExpression Id. */
-  int TILDE = 258;
+  int BANG = 258;
   /** RegularExpression Id. */
-  int HOOK = 259;
+  int TILDE = 259;
   /** RegularExpression Id. */
-  int COLON = 260;
+  int HOOK = 260;
   /** RegularExpression Id. */
-  int EQ = 261;
+  int COLON = 261;
   /** RegularExpression Id. */
-  int LE = 262;
+  int EQ = 262;
   /** RegularExpression Id. */
-  int GE = 263;
+  int LE = 263;
   /** RegularExpression Id. */
-  int NE = 264;
+  int GE = 264;
   /** RegularExpression Id. */
-  int SC_OR = 265;
+  int NE = 265;
   /** RegularExpression Id. */
-  int SC_AND = 266;
+  int SC_OR = 266;
   /** RegularExpression Id. */
-  int INCR = 267;
+  int SC_AND = 267;
   /** RegularExpression Id. */
-  int DECR = 268;
+  int INCR = 268;
   /** RegularExpression Id. */
-  int PLUS = 269;
+  int DECR = 269;
   /** RegularExpression Id. */
-  int MINUS = 270;
+  int PLUS = 270;
   /** RegularExpression Id. */
-  int STAR = 271;
+  int MINUS = 271;
   /** RegularExpression Id. */
-  int SLASH = 272;
+  int STAR = 272;
   /** RegularExpression Id. */
-  int BIT_AND = 273;
+  int SLASH = 273;
   /** RegularExpression Id. */
-  int BIT_OR = 274;
+  int BIT_AND = 274;
   /** RegularExpression Id. */
-  int BIT_XOR = 275;
+  int BIT_OR = 275;
   /** RegularExpression Id. */
-  int REM = 276;
+  int BIT_XOR = 276;
   /** RegularExpression Id. */
-  int LSHIFT = 277;
+  int REM = 277;
   /** RegularExpression Id. */
-  int PLUSASSIGN = 278;
+  int LSHIFT = 278;
   /** RegularExpression Id. */
-  int MINUSASSIGN = 279;
+  int PLUSASSIGN = 279;
   /** RegularExpression Id. */
-  int STARASSIGN = 280;
+  int MINUSASSIGN = 280;
   /** RegularExpression Id. */
-  int SLASHASSIGN = 281;
+  int STARASSIGN = 281;
   /** RegularExpression Id. */
-  int ANDASSIGN = 282;
+  int SLASHASSIGN = 282;
   /** RegularExpression Id. */
-  int ORASSIGN = 283;
+  int ANDASSIGN = 283;
   /** RegularExpression Id. */
-  int XORASSIGN = 284;
+  int ORASSIGN = 284;
   /** RegularExpression Id. */
-  int REMASSIGN = 285;
+  int XORASSIGN = 285;
   /** RegularExpression Id. */
-  int LSHIFTASSIGN = 286;
+  int REMASSIGN = 286;
   /** RegularExpression Id. */
-  int RSIGNEDSHIFTASSIGN = 287;
+  int LSHIFTASSIGN = 287;
   /** RegularExpression Id. */
-  int RUNSIGNEDSHIFTASSIGN = 288;
+  int RSIGNEDSHIFTASSIGN = 288;
   /** RegularExpression Id. */
-  int GRAVE = 289;
+  int RUNSIGNEDSHIFTASSIGN = 289;
+  /** RegularExpression Id. */
+  int GRAVE = 290;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -833,6 +835,7 @@ public interface JavaParserConstants {
     "<HEXADECIMAL_EXPONENT>",
     "<CHARACTER_LITERAL>",
     "<STRING_LITERAL>",
+    "<DELAY>",
     "<IDENTIFIER>",
     "<LETTER>",
     "<PART_LETTER>",

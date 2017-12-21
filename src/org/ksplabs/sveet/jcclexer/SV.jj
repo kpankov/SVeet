@@ -305,11 +305,11 @@ TOKEN :
 |
   < #DECIMAL_LITERAL: ["0"-"9"] (["0"-"9"])* >
 |
-  < #HEX_LITERAL: "'" ["h", "H"] (["0"-"9","a"-"f","A"-"F"])+ >
+  < #HEX_LITERAL: "'" ["h", "H"] (["0"-"9","a"-"f","A"-"F","x","X","z","Z","_"])+ >
 |
-  < #OCTAL_LITERAL: "'" ["o", "O"] (["0"-"7"])* >
+  < #OCTAL_LITERAL: "'" ["o", "O"] (["0"-"7","x","X","z","Z","_"])* >
 |
-  < #BINARY_LITERAL: "'" ["b", "B"] (["0"-"1"])* >
+  < #BINARY_LITERAL: "'" ["b", "B"] (["0"-"1","x","X","z","Z","_"])* >
 |
   < FLOATING_POINT_LITERAL:
         <DECIMAL_FLOATING_POINT_LITERAL>
@@ -356,6 +356,10 @@ TOKEN :
           )
       )*
       "\""
+  >
+|
+  < DELAY:
+      "#" (["0" - "9"])*
   >
 }
 
