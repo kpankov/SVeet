@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Konstantin Pankov <kspzel@gmail.com>
+ * @date 26.02.2019
  */
+
 package org.ksplabs.sveet.lexer;
 
 import org.netbeans.spi.lexer.Lexer;
