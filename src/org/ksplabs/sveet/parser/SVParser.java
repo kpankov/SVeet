@@ -9,8 +9,6 @@ import java.util.ListIterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.event.ChangeListener;
-import javax.swing.text.Document;
-import org.netbeans.modules.csl.api.Error;
 import org.netbeans.modules.parsing.api.Snapshot;
 import org.netbeans.modules.parsing.api.Task;
 import org.netbeans.modules.parsing.spi.Parser;
@@ -18,8 +16,6 @@ import org.netbeans.modules.parsing.spi.Parser.Result;
 import org.netbeans.modules.csl.spi.ParserResult;
 import org.netbeans.modules.parsing.spi.SourceModificationEvent;
 import org.ksplabs.sveet.jccparser.JavaParser;
-import org.netbeans.modules.csl.api.Severity;
-import org.openide.filesystems.FileObject;
 
 public class SVParser extends Parser {
 
